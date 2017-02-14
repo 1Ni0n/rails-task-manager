@@ -1,12 +1,4 @@
-<h1>Tasks#index</h1>
-<ul>
-  <h3>
-    <% @tasks.each do |task| %>
-    <li><%= "#{task.name}:" %>
-      <%= "#{task.description}" %>
-      <%= "(DONE)" if task.done? %>
-      <%= "(TODO)" if task.done? == false %>
-    </li>
-    <%end%>
-  </h3>
-</ul>
+<%= render "index" %>
+
+<%= link_to "Create new task", new_task_path %>
+

@@ -7,3 +7,8 @@
   <%= "(DONE)" if @task.done? %>
   <%= "(TODO)" if @task.done? == false %>
 </h3>
+
+<%= link_to "edit task", edit_task_path %>
+<%= link_to "destroy task", destroy_task_path,
+method: :delete,
+data: {confirm: "Are you sure"} %>
