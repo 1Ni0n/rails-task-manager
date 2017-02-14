@@ -1,0 +1,9 @@
+<h1>Tasks#show</h1>
+
+
+<h3>
+  <%= "#{@task.name}:" %>
+  <%= "#{@task.description}" %>
+  <%= "(DONE)" if @task.done? %>
+  <%= "(TODO)" if @task.done? == false %>
+</h3>
